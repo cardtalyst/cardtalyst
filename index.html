@@ -1,88 +1,187 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Meeting Cards</title>
+
+	<title>Meeting Cards</title>
+	
+	<!-- IMPORTANT!
+		     In the two tags below, update 
+		     to match the location of your Unity files
+		-->
+		<link href="/css/em-unity-1.5.0.min.css" media="all" rel="stylesheet" />
+		<script type="text/javascript" src="/js/vendor/svg4everybody.min.js"></script><!-- polyfill for SVG icons -->
+
 	<!-- Bootstrap -->
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- jquery -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
+
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171999604-1"></script>
+
 	<script>
+
   	window.dataLayer = window.dataLayer || [];
+
   	function gtag(){dataLayer.push(arguments);}
+
   	gtag('js', new Date());
 
+
+
  	 gtag('config', 'UA-171999604-1');
+
 	</script>
+
  
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
     <!--[if lt IE 9]>
+
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <![endif]-->
+
 		<style type="text/css">
+
 			img {
+
 				background-color:pink;
+
 				margin:0px;
+
 				padding:0px;
+
 				float:left;
+
 			}
+
 			.blue{background-color: #00A3E0;}
+
 			.green{background-color: #B4D405;}
+
 			.yellow{background-color: #F2AC33;}
+
 			p { text-align: center;}
+
 			.small{
+
 				width:25%;
+
 				height:auto;
+
 			}
+
+
 
 			.full{
+
 				width:100%;
+
 				padding: 30px;
+
 			}
+
 		</style>
+
 	</head>
+
 	<body>
+
 		<p>
+
 			Welcome to Cardtalyst, The cardgame designed for efficient meetings! To play, tap on a card and flash it to your meeting at anytime!
-		</p>
-		
-		<img id="crd-a" alt="" class="small blue" src="images/Agenda.jpg"> 
-		<img id="crd-b" alt="" class="small green" src="images/Meeting-Scribe.jpg"> 
-		<img id="crd-c" alt="" class="small yellow" src="images/Clarify.jpg"> 
-		<img id="crd-d" alt="" class="small blue" src="images/Everyone-Stands.jpg"> 
-		<img id="crd-e" alt="" class="small green" src="images/Just-Say-No.jpg"> 
-		<img id="crd-f" alt="" class="small yellow" src="images/Back-On-Track.jpg"> 
-		<img id="crd-g" alt="" class="small blue" src="images/Recap.jpg"> 
-		<img id="crd-h" alt="" class="small green" src="images/Speak-Up.jpg"> 
-		<img id="crd-i" alt="" class="small yellow" src="images/Take-It-Offline.jpg"> 
-		<img id="crd-j" alt="" class="small blue" src="images/Thank-You,-Next.jpg"> 
-		
-		<p>
-			Designed by <a href="https://goto/innovationfriday">ETD Innovation Team</a> at ExxonMobil to increase meeting productivity! 
-		</p>
-		
-		<p>
-			Visit <a href="https://goto/cardtalyst">Cardtalyst</a> to download and print this deck.
-		</p>
-		
-		<p>
-			<a href="https://www.freepik.com/stories">Vectors used created by stories - www.freepik.com</a>
+
 		</p>
 
+		
+
+		<img id="crd-a" alt="" class="small blue" src="images/Agenda.jpg"> 
+
+		<img id="crd-b" alt="" class="small green" src="images/Meeting-Scribe.jpg"> 
+
+		<img id="crd-c" alt="" class="small yellow" src="images/Clarify.jpg"> 
+
+		<img id="crd-d" alt="" class="small blue" src="images/Everyone-Stands.jpg"> 
+
+		<img id="crd-e" alt="" class="small green" src="images/Just-Say-No.jpg"> 
+
+		<img id="crd-f" alt="" class="small yellow" src="images/Back-On-Track.jpg"> 
+
+		<img id="crd-g" alt="" class="small blue" src="images/Recap.jpg"> 
+
+		<img id="crd-h" alt="" class="small green" src="images/Speak-Up.jpg"> 
+
+		<img id="crd-i" alt="" class="small yellow" src="images/Take-It-Offline.jpg"> 
+
+		<img id="crd-j" alt="" class="small blue" src="images/Thank-You,-Next.jpg"> 
+
+		
+
+		<p>
+
+			Designed by <a href="https://goto/innovationfriday">ETD Innovation Team</a> at ExxonMobil to increase meeting productivity! 
+
+		</p>
+
+		
+
+		<p>
+
+			Visit <a href="https://goto/cardtalyst">Cardtalyst</a> to download and print this deck.
+
+		</p>
+
+		
+
+		<p>
+
+			<a href="https://www.freepik.com/stories">Vectors used created by stories - www.freepik.com</a>
+
+		</p>
+
+
+
 		<script>
+
 			$( "img" ).click(function() {
+
 				$( this ).toggleClass( "full" );
+
 				$('html, body').animate({
+
 					scrollTop: $(this).offset().top
+
 				},0);
+
 			});
+
 		</script>
+		<!-- Add unity JavaScript to bottom of body -->
+		<!-- IMPORTANT!
+		     In the two tags below, update 
+		     to match the location of your Unity files
+		-->
+		<script type="text/javascript" src="/js/em-unity-1.5.0.min.js"></script>
 	</body>
+
 </html>
